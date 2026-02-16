@@ -14,7 +14,7 @@ CREATE TABLE MATERIEL (
     FOREIGN KEY (idParent) REFERENCES MATERIEL(idMateriel)
 );
 
-INSERT INTO TYPEE VALUES
+INSERT INTO TYPEE (libelle) VALUES
 ('PC'),
 ('Écran'),
 ('CPU'),
@@ -53,3 +53,4 @@ INSERT INTO MATERIEL VALUES
 (32, 'Disque PC3', 2015, 'HDD WD Blue 500 Go', 5, 3),
 (33, 'Batterie PC3', 2015, 'usée (≈ 40 min)', 9, 3),
 (34, 'OS PC3', 2015, 'Windows 10 Pro', 8, 3);
+
