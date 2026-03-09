@@ -22,7 +22,7 @@ ORDER BY m.idMateriel;
 ";
 
 $stmt = $pdo->query($sql);
-$materiels = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$materiels = $stmt->fetchAll();
 ?>
 
 <!DOCTYPE html>
@@ -70,5 +70,6 @@ $materiels = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </body>
 
 </html>
+
 
 
