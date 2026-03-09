@@ -56,12 +56,12 @@ $materiels = $stmt->fetchAll();
 
     <?php foreach ($materiels as $m): ?>
     <tr>
-        <td><?= $m['idMateriel'] ?></td>
-        <td><?= $m['nom'] ?></td>
-        <td><?= $m['annee'] ?></td>
-        <td><?= $m['details'] ?></td>
-        <td><?= $m['type'] ?></td>
-        <td><?= $m['parent'] ?? '—' ?></td>
+        <td><?php echo $m['idMateriel'] ?></td>
+        <td><?php echo $m['nom'] ?></td>
+        <td><?php echo $m['annee'] ?></td>
+        <td><?php echo $m['details'] ?></td>
+        <td><?php echo $m['type'] ?></td>
+        <td><?php echo $m['parent'] ?? '—' ?></td>
     </tr>
     <?php endforeach; ?>
 
@@ -70,6 +70,7 @@ $materiels = $stmt->fetchAll();
 </body>
 
 </html>
+
 
 
 
