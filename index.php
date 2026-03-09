@@ -2,7 +2,7 @@
 require "credentials.php";
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=$charset", $user, $password);
 } catch (PDOException $e) {
     die("Erreur de connexion : " . $e->getMessage());
 }
@@ -70,4 +70,5 @@ $materiels = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </body>
 
 </html>
+
 
