@@ -59,7 +59,7 @@ $materiels = $stmt->fetchAll();
         <td><?php echo $m['idMateriel'] ?></td>
         <td><?php echo $m['nom'] ?></td>
         <td><?php echo $m['annee'] ?></td>
-        <td><?php echo $m['details'] ?></td>
+        <td><?php echo $m['details'] ?? '—' ?></td>
         <td><?php echo $m['type'] ?></td>
         <td><?php echo $m['parent'] ?? '—' ?></td>
     </tr>
@@ -70,6 +70,7 @@ $materiels = $stmt->fetchAll();
 </body>
 
 </html>
+
 
 
 
